@@ -52,7 +52,7 @@ export const personalInfo: PersonalInfo = {
     {
       institution: 'Stony Brook University',
       degree: 'B.S. in Psychology',
-      duration: '- Dec 2011'
+      duration: 'Dec 2011'
     }
   ]
 };
@@ -82,6 +82,5 @@ export const contactInfo: ContactInfo = {
   email: 'tashawncwilliams@gmail.com',
   linkedin: 'https://linkedin.com/in/tashawnwilliams',
   github: 'https://github.com/tashawnwilliams',
-  phone: '(516) 476-1302',
   location: 'Los Angeles, CA'
 };

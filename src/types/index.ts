@@ -10,9 +10,9 @@ export interface Project {
 
 export interface ContactInfo {
   email: string;
-  linkedin?: string;
-  github?: string;
-  twitter?: string;
+  linkedin: string;
+  github: string;
+  location: string;
 }
 
 export interface PersonalInfo {
