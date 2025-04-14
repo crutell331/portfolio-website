@@ -18,7 +18,6 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
-    // Clear any previous errors when user starts typing
     if (error.hasError) {
       clearError();
     }
@@ -29,7 +28,6 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Validate form
       if (!formData.name.trim()) {
         throw new Error('Name is required');
       }
@@ -46,13 +44,15 @@ const Contact = () => {
         throw new Error('Message is required');
       }
       
-      // In a real application, you would send the form data to a backend
-      // For now, we'll just simulate a successful submission
-      setTimeout(() => {
-        setSubmitSuccess(true);
-        setFormData({ name: '', email: '', message: '' });
-        setIsSubmitting(false);
-      }, 1000);
+      const subject = `Message from ${formData.name}`;
+      const body = `From: ${formData.name} (${formData.email})%0D%0A%0D%0A${formData.message}`;
+      const mailtoUrl = `mailto:tashawncwilliams@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      window.location.href = mailtoUrl;
+      
+      setSubmitSuccess(true);
+      setFormData({ name: '', email: '', message: '' });
+      setIsSubmitting(false);
     } catch (err) {
       handleError(err);
       setIsSubmitting(false);
