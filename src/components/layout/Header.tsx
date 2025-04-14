@@ -14,7 +14,7 @@ const Header = () => {
     <header className="sticky top-0 z-10 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-amber-600 hover:text-amber-700 transition-colors">
-          Portfolio
+          Tashawn Williams
         </Link>
         
         {/* Mobile menu button */}
@@ -34,7 +34,7 @@ const Header = () => {
         
         {/* Desktop navigation */}
         <nav className="hidden md:flex space-x-8">
-          <Link href="/#about" className="text-gray-700 hover:text-amber-600 transition-colors">
+          <Link href="/#resume" className="text-gray-700 hover:text-amber-600 transition-colors">
             About
           </Link>
           <Link href="/#projects" className="text-gray-700 hover:text-amber-600 transition-colors">

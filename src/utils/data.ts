@@ -1,9 +1,10 @@
 import { ContactInfo, PersonalInfo, Project } from '../types';
 
 export const personalInfo: PersonalInfo = {
-  name: 'Tashawn Williams',
+  name: 'Tashawn (Tuh-Shawn) Williams',
   title: 'Senior Software Engineer',
   summary: 'Senior Software Engineer with 4 years of hands-on full-stack development experience and 4 years in engineering education. Proven track record of shipping high-quality products, improving team processes, and driving cross-functional collaboration in agile environments. Adept in Javascript, React, TypeScript, Ruby on Rails, and modern front-end ecosystems.',
+  profilePicture: '/images/profilepic.jpeg',
   skills: [
     'JavaScript', 'TypeScript', 'Ruby on Rails', 'React', 'Redux', 'Next.js',
     'Tailwind CSS', 'Material UI', 'PostgreSQL', 'GraphQL', 'REST',
@@ -80,7 +81,7 @@ export const projects: Project[] = [
 
 export const contactInfo: ContactInfo = {
   email: 'tashawncwilliams@gmail.com',
-  linkedin: 'https://linkedin.com/in/tashawnwilliams',
-  github: 'https://github.com/tashawnwilliams',
+  linkedin: 'https://linkedin.com/in/tashawn',
+  github: 'https://github.com/crutell331',
   location: 'Los Angeles, CA'
 };

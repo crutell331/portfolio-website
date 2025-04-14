@@ -2,14 +2,26 @@
 
 import { personalInfo } from '../../utils/data';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-amber-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-8 flex justify-center">
+              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-amber-600">
+                <Image
+                  src={personalInfo.profilePicture}
+                  alt={`${personalInfo.name}'s profile picture`}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Hi, I'm <span className="text-amber-600">{personalInfo.name}</span>
+            <span className="text-amber-600">{personalInfo.name}</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-600 mb-8">
             {personalInfo.title}

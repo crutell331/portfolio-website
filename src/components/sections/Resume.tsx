@@ -2,22 +2,15 @@
 
 import { personalInfo } from '../../utils/data';
 
-const About = () => {
+const Resume = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          About Me
+          Resume
         </h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="mb-12">
-            <h3 className="text-xl font-semibold text-amber-600 mb-4">Professional Summary</h3>
-            <p className="text-gray-700 leading-relaxed">
-              {personalInfo.summary}
-            </p>
-          </div>
-          
           <div className="mb-12">
             <h3 className="text-xl font-semibold text-amber-600 mb-4">Skills</h3>
             <div className="flex flex-wrap gap-2">
@@ -72,4 +65,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Resume;

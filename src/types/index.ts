@@ -19,6 +19,7 @@ export interface PersonalInfo {
   name: string;
   title: string;
   summary: string;
+  profilePicture: string;
   skills: string[];
   experience: {
     company: string;
