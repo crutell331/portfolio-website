@@ -35,7 +35,7 @@ const Header = () => {
         {/* Desktop navigation */}
         <nav className="hidden md:flex space-x-8">
           <Link href="/#resume" className="text-gray-700 hover:text-amber-600 transition-colors">
-            About
+            Resume
           </Link>
           <Link href="/#projects" className="text-gray-700 hover:text-amber-600 transition-colors">
             Projects

@@ -4,11 +4,11 @@ import { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-interface LayoutProps {
+interface HeaderFooterProps {
   children: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const HeaderFooter = ({ children }: HeaderFooterProps) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -18,4 +18,4 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-export default Layout;
+export default HeaderFooter;
